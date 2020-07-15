@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Enkripsi dan Dekripsi File</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2 id="judul">Enkripsi File</h2></br>
+    	<p>Mengenkripsi seluruh file yang ada di dalam folder</p></br>
+    	<form action="EncryptServlet" method="POST">
+            Masukkan folder path : <input type="text" name="plainFile"/></br>
+            Kunci : <input type="text" name="kunci"/>
+            <input type="submit" name="encrypt" value="Encrypt"/>
+    	</form>
+        
+        <h2 id="judul">Dekripsi File</h2></br>
+    	<p>Mendekripsi seluruh file yang ada di dalam folder</p></br>
+    	<form action="DecryptServlet" method="POST">
+            Masukkan folder path : <input type="text" name="cipherFile"/></br>
+            Kunci : <input type="text" name="kunci"/>
+            <input type="submit" name="decrypt" value="Decrypt"/>
+    	</form>
+        
+        <h5>Folder file hasil enkripsi/dekripsi : This project folder/build/web/files/copied</h5></br>
+    </body>
+</html>
